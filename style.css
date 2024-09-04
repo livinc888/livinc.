@@ -1,0 +1,166 @@
+/* General reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Container setup */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Left half - empty but takes up 50% of the screen */
+.left-half {
+    width: 50%;
+    background-color: rgba(39, 36, 36, 0.79);/* Light grey background */
+    border-radius: 20px;
+    height: 69%;
+    margin-top: 20px;
+    box-shadow: 3px 4px 8px rgb(11, 11, 11);
+}
+
+/* Right half - contains the widgets */
+.right-half {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* General widget styling */
+.widget {
+    background-color: rgba(0, 0, 0, 0.79);
+    border-radius: 8px;
+    box-shadow: 3px 4px 8px rgb(68, 18, 18);
+    margin-bottom: 20px;
+    padding: 20px;
+    color: white;
+}
+
+/* Tabs styling */
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgba(92, 82, 82, 0.485);
+    padding:10px ;
+
+}
+
+.tab {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    flex-grow: 1;
+    text-align: center;
+    box-shadow: 3px 4px 8px rgb(11, 11, 11);
+    border-radius: 22px;
+    color: #f0f0f0;
+}
+
+.tab.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Content sections */
+.tab-content {
+    margin-top: 20px;
+}
+
+.content {
+    display: none; /* Hide all content by default */
+}
+
+.content.active {
+    display: block; /* Show the active content */
+}
+
+/* Gallery styling */
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.gallery-images img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.delete-image {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(172, 28, 28, 0.667);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.add-image {
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    border-radius: 20px;
+}
+
+/* Responsiveness for laptop screens */
+@media (max-width: 1024px) {
+    .right-half {
+        padding: 10px;
+    }
+
+    .widget {
+        padding: 10px;
+    }
+}
+.tab:hover{
+    color: rgb(0, 0, 0);
+    background-color: #007bff;
+    box-shadow: 3px 4px 8px rgb(11, 11, 11);
+
+
+}
+.add-image:hover{
+    color: rgb(0, 0, 0);
+    background-color: #007bff;
+    box-shadow: 3px 4px 8px rgb(11, 11, 11);
+
+}
+
+.content{
+    width: auto;
+    background-color: rgb(0, 0, 0);
+    height: 200px;
+    overflow: hidden;
+    padding: 5px 20px;
+    overflow-y:scroll ;
+    border-radius: 10px;
+}

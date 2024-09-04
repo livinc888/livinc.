@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Widgets UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-half"></div>
+        <div class="right-half">
+            <div class="widget">
+                <div class="tabs">
+                    <button class="tab active" id="about-me-tab">About Me</button>
+                    <button class="tab" id="experiences-tab">Experiences</button>
+                    <button class="tab" id="recommended-tab">Recommended</button>
+                </div>
+                <div class="tab-content">
+                    <!-- About Me Content -->
+                    <div id="about-me-content" class="content active">
+                        <h2>About Me</h2>
+                        <p>Hello! I'm a passionate web developer with a love for creating interactive and responsive user interfaces. I have a background in computer science and a deep interest in front-end technologies. I enjoy solving complex problems with simple and elegant code solutions.</p>
+                    </div>
+                    <!-- Experiences Content -->
+                    <div id="experiences-content" class="content">
+                        <h2>Experiences</h2>
+                        <ul>
+                            <li>Front-End Developer at Tech Corp - Developed dynamic and responsive websites using HTML, CSS, and JavaScript.</li>
+                            <li>UI/UX Designer at Design Studio - Worked on user experience design, creating wireframes, and prototyping interfaces.</li>
+                            <li>Intern at WebWorks - Assisted in developing e-commerce platforms and maintaining the company’s website.</li>
+                        </ul>
+                    </div>
+                    <!-- Recommended Content -->
+                    <div id="recommended-content" class="content">
+                        <h2>Recommended</h2>
+                        <p>Here are some recommended resources for anyone interested in web development:</p>
+                        <ul>
+                            <li><a href="https://www.w3schools.com">W3Schools</a> - A comprehensive resource for learning HTML, CSS, and JavaScript.</li>
+                            <li><a href="https://developer.mozilla.org">MDN Web Docs</a> - Mozilla’s official documentation for web technologies.</li>
+                            <li><a href="https://www.freecodecamp.org">freeCodeCamp</a> - A great place to practice coding and build projects.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="widget gallery">
+                <div class="gallery-images">
+                    <!-- Images will be displayed here -->
+                </div>
+                <br>
+                <button class="add-image">Add Image</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
